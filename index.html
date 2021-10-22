@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>device</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="wrapper">
 <header class="page-header">
     <a class="navigation-logo" href="index.html"><img src="img/device.svg" alt="Лого" width="144px" height="36px"></a>
     <div class="header-wrapper">
@@ -16,28 +18,33 @@
             </form>
         </div>
         <div class="login">
-            <a class="login-link" href="#"><img src="img/login.svg" alt="иконка-логин"> Войти </a>
-            <a class="diagramm-link" href="#"><img src="img/diagramm.svg" alt="иконка-сравнить"> Сравнить </a>
-            <a class="bag-link" href="#"><img src="img/bag.svg" alt="иконка-корзина"> Корзина </a>
+            <a class="login-link" href="#"><img src="img/login.svg" alt="иконка-логин" width="13px" height="12px"> Войти </a>
+            <a class="diagramm-link" href="#"><img src="img/diagramm.svg" alt="иконка-сравнить" width="10px" height="12px"> Сравнить </a>
+            <a class="bag-link" href="#"><img src="img/bag.svg" alt="иконка-корзина" width="16px" height="14px"> Корзина </a>
         </div>
         <nav class="navigation">
             <div class="heading">
-                <h1 class="header-heading">КАТАЛОГ ТОВАРОВ</h1>
+                <button class=" button heading-button"></button>
+                    <h1 class="header-heading">Каталог товаров</h1>
+                </button>
             </div>
             <div class="navigation-wrapper">
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#">ДОСТАВКА</a>
+                        <a class="navigation-link" href="#">Доставка</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#">ГАРАНТИЯ</a>
+                        <a class="navigation-link" href="#">Гарантия</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#">КОНТАКТЫ</a>
+                        <a class="navigation-link" href="#">Контакты</a>
                     </li> 
                 </ul>
             </div>
         </nav>
+        <div class="header-composition">
+            <p class="composition">01</p>
+        </div>
     </div>
 </header>
 <main class="main">
@@ -91,46 +98,46 @@
         </section>
         <section class="goods">
             <div class="goods-wrapper">
-                <img src="img/category-1.png" alt="virtual">
+                <img src="img/category-1.png" alt="virtual" width="160px" height="160px">
                 <p class="virtual-paragraph">Виртуальная реальность</p>
             </div>
             <div class="goods-wrapper">
-                <img src="img/category-2.png" alt="monopods">
+                <img src="img/category-2.png" alt="monopods" width="160px" height="160px">
                 <p class="virtual-paragraph">Моноподы для селфи</p>
             </div>
             <div class="goods-wrapper">
-                <img src="img/category-3.png" alt="cameras">
+                <img src="img/category-3.png" alt="cameras" width="160px" height="160px">
                 <p class="virtual-paragraph">Экшн-камеры</p>
             </div>
             <div class="goods-wrapper">
-                <img src="img/category-4.png" alt="bracers">
+                <img src="img/category-4.png" alt="bracers" width="160px" height="160px">
                 <p class="virtual-paragraph">Фитнес-браслеты</p>
             </div>
             <div class="goods-wrapper">
-                <img src="img/category-5.png" alt="smart-clock">
+                <img src="img/category-5.png" alt="smart-clock" width="160px" height="160px">
                 <p class="virtual-paragraph">Умные часы</p>
             </div>
             <div class="goods-wrapper">
-                <img src="img/category-6.png" alt="kvadrokopter">
+                <img src="img/category-6.png" alt="kvadrokopter" width="160px" height="160px">
                 <p class="virtual-paragraph">Квадрокоптеры</p>
             </div>
         </section>
         <section class="service">
             <div class="services">
-                <button class="button button-all" type="button">ДОСТАВКА</button>
-                <button class="button button-all" type="button">ГАРАНТИЯ</button>
-                <button class="button button-all" type="button">КРЕДИТ</button>
+                <button class="button-current button-all" type="button">Доставка</button>
+                <button class="button button-all" type="button">Гарантия</button>
+                <button class="button button-all" type="button">Кредит</button>
             </div>
             <div class="service-description">
                 <h2 class="service-heading">Доставка</h2>
                 <p class="service-paragraph">Мы с удовольствием доставим ваш товар прямо
                     к вашему подъезду совершенно бесплатно! Ведь
                     мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                <img src="img/illustration-delivery.png" alt="почтальон">
+                <img src="img/illustration-delivery.png" alt="почтальон" width="260px" height="240px">
             </div>
         </section>
         <div class="service-addition">
-            <img src="img/car.jpg" alt="грузовик">
+            <img src="img/car.svg" alt="грузовик">
             <p class="service-addition-paragraph">Доставим редкий товар под заказ</p>
             <img src="img/info.svg" alt="Внимание">
         </div>
@@ -165,9 +172,9 @@
                 <h3 class="location-heading">
                     Интернет-магазин «Девайс»
                 </h3>
-                <p class="location-paragraph">
+                <address class="location-paragraph">
                     Санкт-Петербург, набережная реки Карповки, 5, литера П.
-                </p>
+                </address>
                 <a href="tel:88128121212" class="tel">+7 (812) 812-12-12</a>
             </div>
             <div class="time-work">
@@ -205,13 +212,13 @@
 <footer class="main-footer">
     <div class="footer-wrapper">
         <div class="footer-logo">
-            <img src="img/device.svg" alt="Лого" class="footer-logo">
+            <img src="img/device-footer.svg" alt="Лого" class="footer-logo" width="145px" height="36px">
         </div>
         <div class="footer-information">
-            <p class="footer-info">
+            <address class="footer-info">
                 Санкт-Петербург, набережная
                 реки Карповки, 5, литера П.
-            </p>
+            </address>
             <ul class="footer-list">
                 <li class="footer-item">
                     <a href="#" class="footer-link">Доставка</a>
@@ -228,18 +235,19 @@
         <div class="social">
             <ul class="social-list">
                 <li class="social-item">
-                    <a class="social-link"><img src="img/facebook.svg" alt="фэйсбук"></a>
+                    <a class="social-link"><img src="img/facebook.svg" alt="фэйсбук" width="40px" height="40px"></a>
                 </li>
                 <li class="social-item">
-                    <a class="social-link"><img src="img/instagram.svg" alt="инстаграмм"></a>
+                    <a class="social-link"><img src="img/instagram.svg" alt="инстаграмм" width="40px" height="40px"></a>
                 </li>
                 <li class="social-item">
-                    <a class="social-link"><img src="img/twitter.svg" alt="твитер"></a>
+                    <a class="social-link"><img src="img/twitter.svg" alt="твитер" width="40px" height="40px"></a>
                 </li>
             </ul>
-            <a href="htmlacademy.com" class="htmlacademy-link"><img src="img/htmlacademy.svg" alt="лого-школы"></a>
+            <a href="htmlacademy.com" class="htmlacademy-link"><img src="img/htmlacademy.svg" alt="лого-школы" width="115px" height="34px"></a>
         </div>
     </div>
 </footer>
+</div>
 </body>
 </html>
