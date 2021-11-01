@@ -6,48 +6,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrapper">
 <header class="page-header">
     <a class="navigation-logo" href="index.html"><img src="img/device.svg" alt="Лого" width="144px" height="36px"></a>
     <div class="header-wrapper">
-        <div class="search">
-            <form> 
-                <img src="img/search.svg" alt="Иконка_Поиска" width="16px" height="16px">
-                <input type="search" name="search" placeholder="Поиск по сайту"> 
-                <input class="visually-hidden" type="submit" value="Найти">
-            </form>
-        </div>
-        <div class="login">
-            <a class="login-link" href="#"><img src="img/login.svg" alt="иконка-логин" width="13px" height="12px"> Войти </a>
-            <a class="diagramm-link" href="#"><img src="img/diagramm.svg" alt="иконка-сравнить" width="10px" height="12px"> Сравнить </a>
-            <a class="bag-link" href="#"><img src="img/bag.svg" alt="иконка-корзина" width="16px" height="14px"> Корзина </a>
-        </div>
-        <nav class="navigation">
-            <div class="heading">
-                <button class=" button heading-button"></button>
-                    <h1 class="header-heading">Каталог товаров</h1>
-                </button>
+        <div class="wrapper-1">
+            <div class="search">
+                <form> 
+                    <button class="search-button">
+                        <img src="img/search.svg" alt="Иконка_Поиска" width="16px" height="16px">
+                    </button>
+                    <input type="search" name="search" placeholder="Поиск по сайту"> 
+                </form>
             </div>
-            <div class="navigation-wrapper">
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Доставка</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Гарантия</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Контакты</a>
-                    </li> 
-                </ul>
+            <div class="login">
+                <a class="login-link" href="#"><img src="img/login.svg" alt="иконка-логин" width="13px" height="12px"> Войти </a>
+                <a class="diagramm-link" href="#"><img src="img/diagramm.svg" alt="иконка-сравнить" width="10px" height="12px"> Сравнить </a>
+                <a class="bag-link" href="#"><img src="img/bag.svg" alt="иконка-корзина" width="16px" height="14px"> Корзина </a>
             </div>
-        </nav>
+        </div>
+        <div class="wrapper-2">
+            <nav class="navigation">
+                <div class="heading">
+                    <button class=" button heading-button">
+                        <h1 class="header-heading">Каталог товаров</h1>
+                    </button>
+                </div>
+                <div class="navigation-wrapper">
+                    <ul class="navigation-list">
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#">Доставка</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#">Гарантия</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#">Контакты</a>
+                        </li> 
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div class="header-composition">
             <p class="composition">01</p>
         </div>
     </div>
 </header>
-<main class="main">
+<main class="main main-container">
     <div class="main-wrapper">
         <section class="kopter">
             <span class="slide-left">
@@ -123,102 +127,110 @@
             </div>
         </section>
         <section class="service">
-            <div class="services">
-                <button class="button-current button-all" type="button">Доставка</button>
-                <button class="button button-all" type="button">Гарантия</button>
-                <button class="button button-all" type="button">Кредит</button>
-            </div>
-            <div class="service-description">
-                <h2 class="service-heading">Доставка</h2>
-                <p class="service-paragraph">Мы с удовольствием доставим ваш товар прямо
-                    к вашему подъезду совершенно бесплатно! Ведь
-                    мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                <img src="img/illustration-delivery.png" alt="почтальон" width="260px" height="240px">
-            </div>
+                <div class="flex-container">
+                    <div class="services">
+                        <button class="button-current button-all" type="button">Доставка</button>
+                        <button class="button button-all" type="button">Гарантия</button>
+                        <button class="button button-all" type="button">Кредит</button>
+                    </div>
+                    <div class="service-description">
+                        <h2 class="service-heading">Доставка</h2>
+                        <p class="service-paragraph">Мы с удовольствием доставим ваш товар прямо
+                            к вашему подъезду совершенно бесплатно! Ведь
+                            мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                        <img src="img/illustration-delivery.png" alt="почтальон" width="260px" height="240px">
+                    </div>
+                </div>
+
         </section>
         <div class="service-addition">
-            <img src="img/car.svg" alt="грузовик">
+            <img src="img/car.svg" alt="грузовик" width="46px" height="31px">
             <p class="service-addition-paragraph">Доставим редкий товар под заказ</p>
-            <img src="img/info.svg" alt="Внимание">
+            <img src="img/info.svg" alt="Внимание" width="40px" height="40px">
         </div>
-        <section class="about-us">
-            <h2 class="about-us-heading">О нас</h2>
-            <p class="about-us-paragraph">
-                Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
+        <div class="index-columns">
+            <section class="about-us">
+                <h2 class="about-us-heading">О нас</h2>
+                <p class="about-us-paragraph">
+                    Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
 
-            </p>
-            <ul class="transport-company">
-                <li class="transport-company-item">
-                    <a href="#" class="transport-company-link"> Медовые линии</a>
-                </li>
-                <li class="transport-company-item">
-                    <a href="#" class="transport-company-link"> Сдик</a>
-                </li>
-                <li class="transport-company-item">
-                    <a href="#" class="transport-company-link"> ТоксБерри</a>
-                </li>
-            </ul>
-            <button class="button button-all">ПОДРОБНЕЕ О НАС</button>
-        </section>
-        <section class="contacts">
-            <div class="contacts-wrapper">
-                <h2 class="contacts-main-heading">Контакты</h2>
-                <p class="contacts-paragraph">
-                Вы можете забрать товар сами, заехав в наш офис. 
-                Заодно, сможете проверить работоспособность покупки. 
                 </p>
-            </div>
-            <div class="location">
-                <h3 class="location-heading">
-                    Интернет-магазин «Девайс»
-                </h3>
-                <address class="location-paragraph">
-                    Санкт-Петербург, набережная реки Карповки, 5, литера П.
-                </address>
-                <a href="tel:88128121212" class="tel">+7 (812) 812-12-12</a>
-            </div>
-            <div class="time-work">
-                <h3 class="time-work-heading">
-                    Время работы
-                </h3>
-                <ul class="time-work-list">
-                    <li class="time-work-item">
-                        пн—пт: с 10:00 до 22:00
+                <ul class="transport-company">
+                    <li class="transport-company-item">
+                        <a href="#" class="transport-company-link"> Медовые линии</a>
                     </li>
-                    <li class="time-work-item">
-                        сб—вс: с 10:00 до 19:00
+                    <li class="transport-company-item">
+                        <a href="#" class="transport-company-link"> Сдик</a>
+                    </li>
+                    <li class="transport-company-item">
+                        <a href="#" class="transport-company-link"> ТоксБерри</a>
                     </li>
                 </ul>
-                <a href="#" class="time-work-link">НАПИШИТЕ НАМ</a>
-            </div>
-        </section>
+                <button class="button button-all">ПОДРОБНЕЕ О НАС</button>
+            </section>
+            <section class="contacts">
+                <div class="contacts-wrapper">
+                    <h2 class="contacts-main-heading">Контакты</h2>
+                    <p class="contacts-paragraph">
+                    Вы можете забрать товар сами, заехав в наш офис. 
+                    Заодно, сможете проверить работоспособность покупки. 
+                    </p>
+                </div>
+                <div class="location">
+                    <h3 class="location-heading">
+                        Интернет-магазин «Девайс»
+                    </h3>
+                    <address class="location-paragraph">
+                        Санкт-Петербург, набережная реки Карповки, 5, литера П.
+                    </address>
+                    <a href="tel:88128121212" class="tel">+7 (812) 812-12-12</a>
+                </div>
+                <div class="time-work">
+                    <h3 class="time-work-heading">
+                        Время работы
+                    </h3>
+                    <ul class="time-work-list">
+                        <li class="time-work-item">
+                            пн—пт: с 10:00 до 22:00
+                        </li>
+                        <li class="time-work-item">
+                            сб—вс: с 10:00 до 19:00
+                        </li>
+                    </ul>
+                    <a href="#" class="time-work-link">НАПИШИТЕ НАМ</a>
+                </div>
+            </section>
+        </div>
         <section class="follow">
-            <h2 class="follow-heading">
-                Подпишись на рассылку
-            </h2>
-            <p class="follow-paragraph">
-                Еженедельный дайджест с обзорами новинок,
-                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-            </p>
-            <form action="" class="follow-form">
-                <input type="email" name="search" placeholder="Ваш e-mail">
-                <input  type="submit" value="Подписаться">
-            </form>
+            <div class="follow-wrapper">
+                <h2 class="follow-heading">
+                    Подпишись на рассылку
+                </h2>
+                <p class="follow-paragraph">
+                    Еженедельный дайджест с обзорами новинок,
+                    длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+                </p>
+                <form action="" class="follow-form">
+                    <input type="email" name="search" placeholder="Ваш e-mail">
+                    <input  type="submit" value="Подписаться">
+                </form>
+            </div>
         </section>
 
     
     </div>
 </main>
 <footer class="main-footer">
+    <div class="footer-logo">
+        <img src="img/device-footer.svg" alt="Лого" class="footer-logo" width="145px" height="36px">
+    </div>
     <div class="footer-wrapper">
-        <div class="footer-logo">
-            <img src="img/device-footer.svg" alt="Лого" class="footer-logo" width="145px" height="36px">
-        </div>
         <div class="footer-information">
             <address class="footer-info">
                 Санкт-Петербург, набережная
                 реки Карповки, 5, литера П.
             </address>
+        </div>
             <ul class="footer-list">
                 <li class="footer-item">
                     <a href="#" class="footer-link">Доставка</a>
@@ -230,9 +242,9 @@
                     <a href="#" class="footer-link">Контакты</a>
                 </li>
             </ul>
+        <div class="footer-telephone">
             <a href="tel:88128121212" class="footer-tel">Тел.: +7 (812) 812-12-12</a>
         </div>
-        <div class="social">
             <ul class="social-list">
                 <li class="social-item">
                     <a class="social-link"><img src="img/facebook.svg" alt="фэйсбук" width="40px" height="40px"></a>
@@ -244,10 +256,10 @@
                     <a class="social-link"><img src="img/twitter.svg" alt="твитер" width="40px" height="40px"></a>
                 </li>
             </ul>
+        <div class="htmlacademy">
             <a href="htmlacademy.com" class="htmlacademy-link"><img src="img/htmlacademy.svg" alt="лого-школы" width="115px" height="34px"></a>
         </div>
     </div>
 </footer>
-</div>
 </body>
 </html>
