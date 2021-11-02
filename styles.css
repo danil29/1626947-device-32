@@ -69,11 +69,14 @@ body {
     margin-left: auto;
 }
 
-.header-composition {
+.kopter-number {
     width: 250px;
-    margin-top: 31px;
-    margin-right: 49px;
-    margin-left: auto;
+    margin: 0;
+}
+
+.kopter-photo {
+    display: flex;
+    width: 560px;
 }
 
 .navigation-list {
@@ -100,6 +103,11 @@ body {
     display: flex;
     width: 1160px;
     margin: 0 auto;
+    justify-content: space-between;
+}
+
+.kopter-information {
+    width: 560px;
 }
 
 .goods {
@@ -210,6 +218,7 @@ body {
     line-height: 50px;
 }
 
+
 .service-paragraph, .about-us-paragraph, .contacts-paragraph, .location-paragraph, .tel, .follow-paragraph{
     color:#444;
 }
@@ -303,14 +312,28 @@ body {
 
 .footer-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 1160px;
     margin: 0 auto;
 }
+.footer-logo-2 {
+    margin: 0;
+}
 
+.footer-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 49px;
+}
 .footer-logo {
-    margin: 0 auto;
+
     max-width: 1160px;
+}
+
+.social-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -331,7 +354,12 @@ body {
     display: flex;
     justify-content: space-between;
     width: 458px;
+    margin: 0;
+    padding: 0;
+}
 
+.footer-item {
+    width: 148px;
 }
 
 .footer-link {
@@ -351,21 +379,34 @@ body {
 .footer-tel {
     font-size: 16px;
     color: white;
+    margin: 0;
+
 }
 
 .footer-telephone {
     width: 293px;
     margin-left: 58px;
+    text-align: end;
+}
+
+.footer-composition {
+    width: 80px;
 }
 
 .social-list {
     display: flex;
     width: 149px;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.social-item {
+    width: 40px;
 }
 
 .htmlacademy {
-    width: 109px;
+    width: 115px;
 }
 
 .wrapper { 
@@ -401,6 +442,7 @@ body {
 
 .sorting-container {
     background-color: #EBEBEB;
+    width: 972px;
 }
 
 .label-heading {
@@ -418,6 +460,18 @@ body {
     color: #000;
 }
 
+.price {
+    width: 207px;
+}
+
+.choose-color {
+    width: 207px;
+}
+
+.bluetooth-choose {
+    width: 207px;
+}
+
 .product-card-price {
     line-height: 21px;
 }
@@ -433,6 +487,10 @@ body {
     list-style: none;
 }
 
+.pagination-container {
+    background-color: #EBEBEB;
+}
+
 .pagination {
     list-style: none;
 }
@@ -440,6 +498,8 @@ body {
 .pagination-link-number {
     color: #444444;
 }
+
+
 
 .index, .catalog, .monopods {
     font-size: 16px;
@@ -453,6 +513,8 @@ body {
     font-size: 50px;
     line-height: 50px;
     font-family: "Raleway";
+    margin: 0;
+    padding: 0;
 }
 
 .filters-heading {
@@ -474,18 +536,57 @@ body {
 }
 
 .next, .back {
-    font-family: Raleway;
+    font-family: "Raleway";
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
+    letter-spacing: 0.2em;
     color: #000;
 }
 
 .addition-container {
     background-color: #EBEBEB;
+    height: auto;
 }
 
 .filters-container {
-    background-color: #DCDCDC;;
+    background-color: #DCDCDC;
+    width: 468px;
 }
 
+
+
+.flex-columns {
+    display: flex;
+}
+
+.left-columns {
+    width: 468px;
+    background-color: #F0F0F0;
+}
+
+
+.inner-header {
+    width: 1160px;
+    margin: 0 auto;
+}
+.main-inner {
+    flex-grow: 1;
+}
+
+.main-wrapper-catalog {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.name, .logout-link {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.logout-link {
+    opacity: 0.3;
+}
