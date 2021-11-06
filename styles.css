@@ -44,6 +44,7 @@ body {
     font-size: normal;
     background-color: #fff;
     color: #000;
+    min-height: 100vh;
 }
 
 
@@ -87,6 +88,13 @@ body {
 .search {
     width: 516px;
     margin-right: 24px;
+}
+
+.search-button {
+    background: url(img/search.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -238,8 +246,7 @@ body {
 
 .flex-container {
     display: flex;
-    width: 1160px;
-    margin: 0 auto;
+
 }
 
 .service-description {
@@ -442,7 +449,7 @@ body {
 
 .sorting-container {
     background-color: #EBEBEB;
-    width: 972px;
+
 }
 
 .label-heading {
@@ -523,12 +530,28 @@ body {
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+
+}
+
+.catalog-filter {
+    background: #f0f0f0;
+    height: 100%;
+}
+
+.catalog-filter::before {
+    content: " ";
+    position: absolute;
+    width: calc((100vw - 1160px)/2);
+    background: #f0f0f0;
+    height: 2176px;
+    left: 0;
 }
 
 .catalog-filter-title {
     font-weight: 700;
     line-height: 20px;
 }
+
 
 .color-label, .bluetooth-label {
     font-size: 16px;
@@ -549,21 +572,31 @@ body {
     height: auto;
 }
 
-.filters-container {
-    background-color: #DCDCDC;
-    width: 468px;
+.filters-container::before {
+    position: absolute;
+    content:" ";
+    background: #dcdcdc;
+    width: calc((100vw - 1160px)/ 2);
+    height: 18.5px;
+    left: 0;
 }
 
+.filters-heading {
+    background: #dcdcdc;
+}
 
 
 .flex-columns {
     display: flex;
+    width: 1160px;
+    margin: 0 auto;
 }
 
-.left-columns {
-    width: 468px;
-    background-color: #F0F0F0;
-}
+
+
+
+
+
 
 
 .inner-header {
@@ -574,10 +607,6 @@ body {
     flex-grow: 1;
 }
 
-.main-wrapper-catalog {
-    width: 1440px;
-    margin: 0 auto;
-}
 
 .name, .logout-link {
     color: black;
